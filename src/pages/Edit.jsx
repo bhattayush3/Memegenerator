@@ -1,7 +1,7 @@
 import React, { useState,useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import Button from 'react-bootstrap/Button'
-import Text from "../components/text";
+import Text from "../components/Text";
 import {exportComponentAsJPEG} from "react-component-export-image"
 import * as htmlToImage from 'html-to-image';
 import { toPng } from "html-to-image";
