@@ -14,7 +14,7 @@ function Text() {
             value={val}
             autoFocus
             onChange={(e) => setVal(e.target.value)}
-            onBlur={() => setEditMode(false)} // 👈 exit on blur instead of double-click
+            onDoubleClick={()=>setEditMode(false)}
           />
         ) : (
           <h1 onDoubleClick={() => setEditMode(true)}>{val}</h1>
